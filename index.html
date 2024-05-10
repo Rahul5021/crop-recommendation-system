@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System</h1>
+        <form action="" id="cropForm">
+            <label for="nitrogen">Nitrogen (kg/ha):</label>
+            <input type="text" id="nitrogen" name="nitrogen" required>
+            <br>
+            <label for="phosphorus">Phosphorus (kg/ha):</label>
+            <input type="text" id="phosphorus" name="phosphorus" required>
+            <br>
+            <label for="potassium">Potassium (kg/ha):</label>
+            <input type="text" id="potassium" name="potassium" required>
+            <br>
+            <label for="temperature">Temperature (°C):</label>
+            <input type="text" id="temperature" name="temperature" required>
+            <br>
+            <label for="humidity">Humidity (%):</label>
+            <input type="text" id="humidity" name="humidity" required>
+            <br>
+            <label for="ph">pH Value:</label>
+            <input type="text" id="ph" name="ph" required>
+            <br>
+            <label for="rainfall">Rainfall (mm):</label>
+            <input type="text" id="rainfall" name="rainfall" required>
+            <br>
+            <label for="cropType">Crop Type:</label>
+            <select name="cropType" id="cropType" required>
+                <option value="fruit">Fruit</option>
+                <option value="grain">Grain</option>
+                <option value="fiber">Fiber</option>
+            </select>
+            <br>
+            <label for="sowing_season">Sowing Season:</label>
+            <select name="sowing_season" id="sowing_season" required>
+                <option value="winter">Winter</option>
+                <option value="summer">Summer</option>
+            </select>
+            <br>
+            <button type="submit">Get Crop Prediction</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
